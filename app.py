@@ -44,7 +44,7 @@ def processRequest(req):
         result = urlopen(yql_url).read()
         data = json.loads(result)
         res = makeWebhookResult(data)
-    elif req.get("result").get("action")=="getjoke":
+    elif req.get("result").get("action")=="support.special_offers":
         baseurl = "http://unatc.ro/webhook_index.html"
         result = urlopen(baseurl).read()
         data = json.loads(result)
